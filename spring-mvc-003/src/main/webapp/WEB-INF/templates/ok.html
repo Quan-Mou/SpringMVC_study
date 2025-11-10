@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ok!</title>
+</head>
+<body>
+<h3>OK</h3>
+<hr>
+
+<h1 th:text="${modelAttribute}">request数据:</h1>
+<h1 th:text="${mapAttribute}">request数据:</h1>
+<h1 th:text="${modelMapAttribute}">request数据:</h1>
+<h1 th:text="${modelAndViewAttribute}">request数据:</h1>
+<h1 th:text="${session.name}">request数据:</h1>
+<h1 th:text="${session}">request数据:</h1>
+<h1 th:text="${name}">request数据:</h1>
+</body>
+</html>

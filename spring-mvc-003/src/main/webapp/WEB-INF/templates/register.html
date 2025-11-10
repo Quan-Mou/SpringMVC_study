@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+<h3>用户注册</h3>
+<hr>
+<h1>使用原生Servlet</h1>
+<form th:action="@{/register1}" method="post">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="password"><br>
+    性别：
+    男 <input type="radio" name="sex" value="1">
+    女 <input type="radio" name="sex" value="0">
+    <br>
+    爱好：
+    抽烟 <input type="checkbox" name="hobby" value="smoke">
+    喝酒 <input type="checkbox" name="hobby" value="drink">
+    烫头 <input type="checkbox" name="hobby" value="perm">
+    <br>
+    简介：<textarea rows="10" cols="60" name="intro"></textarea><br>
+    <input type="submit" value="注册">
+</form>
+
+
+<h1>使用@RequestParam注解获取</h1>
+<form th:action="@{/register2}" method="post">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="password"><br>
+    性别：
+    男 <input type="radio" name="sex" value="1">
+    女 <input type="radio" name="sex" value="0">
+    <br>
+    爱好：
+    抽烟 <input type="checkbox" name="hobby" value="smoke">
+    喝酒 <input type="checkbox" name="hobby" value="drink">
+    烫头 <input type="checkbox" name="hobby" value="perm">
+    <br>
+    简介：<textarea rows="10" cols="60" name="intro"></textarea><br>
+    <input type="submit" value="注册">
+</form>
+
+
+<h1>根据控制器方法参数名成对应获取</h1>
+<form th:action="@{/register3}" method="post">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="password"><br>
+    性别：
+    男 <input type="radio" name="sex" value="1">
+    女 <input type="radio" name="sex" value="0">
+    <br>
+    爱好：
+    抽烟 <input type="checkbox" name="hobby" value="smoke">
+    喝酒 <input type="checkbox" name="hobby" value="drink">
+    烫头 <input type="checkbox" name="hobby" value="perm">
+    <br>
+    简介：<textarea rows="10" cols="60" name="intro"></textarea><br>
+    <input type="submit" value="注册">
+</form>
+
+<h1>根据对象自动封装（底层调用的是反射）</h1>
+<form th:action="@{/register4}" method="post">
+    用户名：<input type="text" name="username"><br>
+    密码：<input type="password" name="password"><br>
+    性别：
+    男 <input type="radio" name="sex" value="1">
+    女 <input type="radio" name="sex" value="0">
+    <br>
+    爱好：
+    抽烟 <input type="checkbox" name="hobby" value="smoke">
+    喝酒 <input type="checkbox" name="hobby" value="drink">
+    烫头 <input type="checkbox" name="hobby" value="perm">
+    <br>
+    简介：<textarea rows="10" cols="60" name="intro"></textarea><br>
+    <input type="submit" value="注册">
+</form>
+<hr>
+<a th:href="@{/model}">使用model设置request域数据</a>
+</body>
+</html>

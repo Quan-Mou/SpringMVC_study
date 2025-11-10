@@ -4,12 +4,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class IndexController {
+@RequestMapping("/order")
+public class OrderController {
 
-    @RequestMapping("/")
+    @RequestMapping("/test/**")
     public String index() {
-        System.out.println("访问首页");
-        return "index";
+        System.out.println("访问order");
+        return "order";
     }
 
 
