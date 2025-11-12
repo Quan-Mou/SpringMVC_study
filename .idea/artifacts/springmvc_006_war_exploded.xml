@@ -1,0 +1,36 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="springmvc-006:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/springmvc_006_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="springmvc-006" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:6.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:6.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:6.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:6.1.4" />
+          <element id="library" level="project" name="Maven: io.micrometer:micrometer-observation:1.12.3" />
+          <element id="library" level="project" name="Maven: io.micrometer:micrometer-commons:1.12.3" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:6.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:6.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:6.1.4" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:6.1.4" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.5.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.5.3" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:2.0.12" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf-spring6:3.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.thymeleaf:thymeleaf:3.1.2.RELEASE" />
+          <element id="library" level="project" name="Maven: org.attoparser:attoparser:2.0.7.RELEASE" />
+          <element id="library" level="project" name="Maven: org.unbescape:unbescape:1.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.17.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.17.0" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.17.0" />
+          <element id="library" level="project" name="Maven: net.bytebuddy:byte-buddy:1.14.9" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="springmvc-006/web/Web" />
+    </root>
+  </artifact>
+</component>
